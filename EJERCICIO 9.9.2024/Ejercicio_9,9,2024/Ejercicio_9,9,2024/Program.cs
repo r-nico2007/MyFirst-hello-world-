@@ -1,14 +1,15 @@
 ﻿using System;
+using System.ComponentModel.Design;
 
 public class Program
-    // Construir un programa que pida por pantalla 3 numeros 
+// Construir un programa que pida por pantalla 3 numeros 
 // y luego diga cual es el mayor, el del medio y el menor de los 
 //numeros ingresados 
 {
     private static void Main(string[] args)
     {
         double num1, num2, num3;
-        bool esmayor;
+        bool esmayor, esintermedio, esmenor;
 
         Console.Write("Ingrese el primer numero: ");
         num1 = Convert.ToDouble(Console.ReadLine());
@@ -22,22 +23,27 @@ public class Program
 
         if (((num1 > num2) && (num1 > num3)))
         {
-            esmayor = true;
-
+            if (num2 > num3)
+            {
+                esmayor = true;
+            }
+            else
+            {
+                esmayor = false;
+            }
+            if (esmayor)
+            Console.Write("Numero 1 es el mayor, numero 2 es el intermedio y número 3 es el menor.");
+            else
+            {
+                Console.Write("Numero 1 no es el mayor, numero 2 no es el intermedio y numero 3 no es el menor");
+            }
+            }
         }
-        else
-        {
-            esmayor = false;
-        }
-        if (esmayor)
-        {
-            Console.Write("Numero 1 es el mayor");
-        }
-        else
-        {
-            Console.Write("Numero 1 no es el mayor");
-        }    
-        
     }
 
-    }
+
+           
+
+    
+
+    
