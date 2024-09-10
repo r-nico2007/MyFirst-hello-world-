@@ -21,29 +21,27 @@ public class Program
         Console.Write("Ingrese el tercer numero: ");
         num3 = Convert.ToDouble(Console.ReadLine());
 
+
         if (((num1 > num2) && (num1 > num3)))
         {
             if (num2 > num3)
             {
-                esmayor = true;
+                Console.Write("Numero 1 es el mayor, numero 2 es el intermedio y número 3 es el menor.");
             }
             else
             {
-                esmayor = false;
-            }
-            if (esmayor)
-            Console.Write("Numero 1 es el mayor, numero 2 es el intermedio y número 3 es el menor.");
-            else
-            {
-                Console.Write("Numero 1 no es el mayor, numero 2 no es el intermedio y numero 3 no es el menor");
-            }
+                Console.Write("Numero 1  es el mayor, numero 3 es el intermedio y numero 2 es el menor");
             }
         }
+        else if (num2 > num3) && (num1 > num3)))
+                { 
     }
+}
 
 
-           
 
-    
 
-    
+
+
+
+
